@@ -22,8 +22,8 @@ struct Drv2 : Base {
 
 int main() {
     Base* b = new Drv1;
-    Drv1* d1 = static_cast<Drv1*>(b);  // ¾ÈÀüÇÑ ´Ù¿îÄ³½ºÆÃ
-    Drv2* d2 = static_cast<Drv2*>(b);  // ¾ÈÀüÇÏÁö ¾ÊÀº ´Ù¿îÄ³½ºÆÃ
+    Drv1* d1 = static_cast<Drv1*>(b);  // ì˜¬ë°”ë¥¸ ë‹¤ìš´ìºìŠ¤íŒ…
+    Drv2* d2 = static_cast<Drv2*>(b);  // ì•ˆì „í•˜ì§€ ì•Šì€ ë‹¤ìš´ìºìŠ¤íŒ…
 
     d1->f();
     d2->f();
