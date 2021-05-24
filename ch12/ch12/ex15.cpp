@@ -23,7 +23,7 @@ struct Drv2 : Base {
 int main() {
     Base* b = new Drv1;
     Drv1* d1 = static_cast<Drv1*>(b);  // 올바른 다운캐스팅
-    Drv2* d2 = static_cast<Drv2*>(b);  // 안전하지 않은 다운캐스팅
+    Drv2* d2 = static_cast<Drv2*>(b);  // 잘못된 다운캐스팅
 
     d1->f();
     d2->f();
